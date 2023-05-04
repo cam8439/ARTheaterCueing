@@ -27,7 +27,7 @@ In order to use this application you should have the following at minimum:
   A detailed guide on how to build and deploy Unreal apps for the Magic Leap 1 can be viewed [here](https://drive.google.com/file/d/1NtPB8l1UmfEzSEFfTifMmqznxfXZJ2j2/view?usp=sharing).
   When building for the Magic Leap, verify in the `Minimal_Default` level blueprint that the IP for the server to join is set correctly.
   
-  ![Set IP of Server]()
+  ![Set IP of Server](img/serverip.png)
   
 ### QLab Setup
   In your QLab workspace, you will need to create a new network patch. To do this, go to `Window/Workspace Settings/Network` and click "New Patch."
@@ -79,14 +79,14 @@ In order to integrate this system with an existing project, one should follow th
 * Inside the `Make Sequence Cues` function, find the commented node within "Edit Patch number of created cue" and set the integer value to the patch number 
 of your AR Cue network patch
 
-![Edit Cue Patch Number]()
+![Edit Cue Patch Number](img/patchnum.png)
 
 ### Creating Cues
 
 #### API
 The formula for creating new API bindings is as follows in the image:
 
-![Create API Binding]()
+![Create API Binding](img/patternmatch.png)
 
 #### Sequences
 It is **highly recommended** that as many cues as possible be handled through level sequences, as this affords the highest level of flexibility.
@@ -95,11 +95,17 @@ Make sure that any and all sequence actors are set to "replicate playback"
 #### Blueprint Actors
 Blueprint Actors must have their replication functionality programmed manually. Refer to the following blueprint snippets for examples
 
-* Level Bluepring Set Light Color: ![Level Bluepring Set Light Color]()
+* Level Bluepring Set Light Color: ![Level Bluepring Set Light Color](img/lightcolor.png)
 
-* PointLight_Blueprint OnRep_CurrentColor: ![PointLight_Blueprint OnRep_CurrentColor]
+* PointLight_Blueprint Variable Settings:
 
-* PointLight_Blueprint Event Graph: ![PointLight_Blueprint Event Graph]()
+![PointLight_Blueprint Variable Settings](img/repvar.png)
+
+* PointLight_Blueprint OnRep_CurrentColor: 
+
+![PointLight_Blueprint OnRep_CurrentColor](img/onrep.png)
+
+* PointLight_Blueprint Event Graph: ![PointLight_Blueprint Event Graph](img/pertick.png)
 
 ## Full Report
 The full report for this project can be viewed [here]()
