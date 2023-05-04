@@ -35,7 +35,7 @@ In order to use this application you should have the following at minimum:
   
   * If you are not modifying the code, please set the path number of this patch to "2"
   
-  ![QLab Network Patch]()
+  ![QLab Network Patch](img/netpatch.png)
 
 ### Command Line Arguments
 The following command should be used when running the application as the server:
@@ -46,7 +46,7 @@ The following command should be used when running the application as the server:
 `-workspace` is the ID of the QLab workspace to link to. This can be viewed with QLab open by navigating to `Window/Workspace Status` and clicking the
 "Info" tab. `-remote` is the IP of the machine from which you are running QLab.
 
-![QLab Workspace ID]()
+![QLab Workspace ID](img/workspaceid.png)
 
 ### Steps to Run
 After you have built and deployed the project, follow these steps to run it:
